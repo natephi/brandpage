@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Playfair Display", sans-serif;
     color: black;
     background-color: white;
     font-size: 22px;
@@ -14,21 +14,39 @@ body {
   h2,
   h3,
   h4,
-  p {
+  p, h5
+  {
     margin: 0;
     padding: 10px;
   }
   
   .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    gap: 20px;
+    justify-content: center;
+      }
+
+  .banner {
+      background-image: url("../images/banner.png");
+      width: auto;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+
+  }
+
+  .header img{
+      height: 80px;
+      width: auto;
   }
   
   .navbar {
     display: flex;
     justify-content: space-around;
     margin: 0 10%;
+    padding: 10px;
   }
   
   .navbar p {
@@ -37,14 +55,14 @@ body {
   }
   
   .main {
-    padding-top: 35px;
-    opacity: 0.9;
+        opacity: 0.9;
   }
   
   .mission {
     display: flex;
-    height: 300px;
-    padding-top: 35px;
+    height: 250px;
+    padding: 10px;
+    
   }
   
   .mission .content {
@@ -54,30 +72,37 @@ body {
   }
   
   #portfolio {
-    min-height: 500px;
+    min-height: 450px;
     margin: auto;
-    padding-top: 70px;
-  }
+    background-color: rgba(0, 74, 173, 0.2);
+    padding: 10px;
+      }
   
   .companies {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
+    flex: 1 1 auto;
+
   }
   
   .company {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
   }
   
   .company img {
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
+    width: 400px;
     padding: 10px;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
   }
   
   .company span {
@@ -87,18 +112,33 @@ body {
     text-align: center;
   }
   
+
+#team-container {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
   .team {
-    padding-top: 70px;
-    padding-top: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 100px;
+    overflow: hidden;
+    flex: 1 1 auto;
   }
   
   .teammate {
     padding: 10px;
-    color: white;
+    color:black;
     flex-basis: 280px;
+    overflow: hidden;
   }
   
   .teammate img {
@@ -106,10 +146,18 @@ body {
     margin-right: auto;
     width: 200px;
     height: auto;
+    overflow: hidden;
   }
   
-  .contact,
+  .contact {
+    background-color: rgba(0, 74, 173, 1.0);
+    color: white;
+    padding: 10px;
+
+  }
   .copyright {
-    padding-top: 20px;
-  }
-  
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
